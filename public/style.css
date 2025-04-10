@@ -1,0 +1,103 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+}
+h1 {
+  text-align: center;
+  color: #007acc;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.search-container input {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #007acc;
+  border-radius: 10px;
+}
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  border: 2px solid #007acc;
+  border-radius: 15px;
+  z-index: 10;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.form-popup input,
+.form-popup select,
+.form-popup button {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.form-popup button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.form-popup button:hover {
+  background-color: #005f99;
+}
+.open-button {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.switches-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.switch-box {
+  width: 160px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+.switch-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: black;
+}
+.bulb {
+  background-color: yellow;
+}
+.off {
+  background-color: white !important;
+  box-shadow: none !important;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 5;
+}
+.time-input {
+  margin: 15px;
+  width: 50px;
+}
